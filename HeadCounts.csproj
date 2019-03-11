@@ -68,22 +68,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Home.aspx" />
+    <Content Include="odometer\docs\images\odometer.gif" />
+    <Content Include="odometer\docs\welcome\index.html" />
+    <Content Include="odometer\docs\welcome\landing-page.css" />
+    <Content Include="odometer\docs\welcome\landing-page.js" />
+    <Content Include="odometer\docs\welcome\onepage-scroll.css" />
+    <Content Include="odometer\docs\welcome\onepage-scroll.js" />
+    <Content Include="odometer\odometer.js" />
+    <Content Include="odometer\odometer.min.js" />
+    <Content Include="odometer\test\demo.html" />
+    <Content Include="odometer\test\performance.html" />
+    <Content Include="odometer\themes\odometer-theme-car.css" />
+    <Content Include="odometer\themes\odometer-theme-default.css" />
+    <Content Include="odometer\themes\odometer-theme-digital.css" />
+    <Content Include="odometer\themes\odometer-theme-minimal.css" />
+    <Content Include="odometer\themes\odometer-theme-plaza.css" />
+    <Content Include="odometer\themes\odometer-theme-slot-machine.css" />
+    <Content Include="odometer\themes\odometer-theme-train-station.css" />
+    <Content Include="user.png" />
     <Content Include="home_background.jpg" />
+    <Content Include="Register.aspx" />
     <Content Include="Web.config" />
-    <Content Include="home_page.aspx" />
+    <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="home_page.aspx.cs">
-      <DependentUpon>home_page.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home_page.aspx.designer.cs">
-      <DependentUpon>home_page.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Content Include="odometer\.gitignore" />
+    <Content Include="odometer\.hsdoc" />
+    <Content Include="odometer\bower.json" />
+    <Content Include="odometer\config.rb" />
+    <Content Include="odometer\docs\api\themes.md" />
+    <Content Include="odometer\docs\intro.md" />
+    <Content Include="odometer\docs\welcome\landing-page.coffee" />
+    <Content Include="odometer\Gruntfile.coffee" />
+    <Content Include="odometer\LICENSE" />
+    <Content Include="odometer\odometer.coffee" />
+    <Content Include="odometer\package.json" />
+    <Content Include="odometer\README.md" />
+    <Content Include="odometer\sass\odometer-theme-car.sass" />
+    <Content Include="odometer\sass\odometer-theme-default.sass" />
+    <Content Include="odometer\sass\odometer-theme-digital.sass" />
+    <Content Include="odometer\sass\odometer-theme-minimal.sass" />
+    <Content Include="odometer\sass\odometer-theme-plaza.sass" />
+    <Content Include="odometer\sass\odometer-theme-slot-machine.sass" />
+    <Content Include="odometer\sass\odometer-theme-train-station.sass" />
+    <Content Include="odometer\sass\_mixins.sass" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

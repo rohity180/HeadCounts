@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home_page.aspx.cs" Inherits="HeadCounts.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="HeadCounts.Register" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title> Home-HeadCounts</title>
-
+    <title></title>
     <style>
         body, html {
     height: 85%;
@@ -37,13 +36,14 @@
             cursor: pointer;
         }
         .btn_anim{
-            text-transform: uppercase;
+            
             transition: 0.5s;
             flex: 1 1 auto;
             background-size: 200% auto;
         }
         .btn_anim:hover {
   background-position: right center; /* change the direction of the change here */
+  text-transform: uppercase;
 }
         .login{
             background-image: linear-gradient(to right, #84fab0 0%, #ffad99 51%, #84fab0 100%);
@@ -71,28 +71,72 @@
         .main_div{
             margin-top:5%;
         }
+        .infield{
+
+            height:30px;
+            width:150px;
+            border:none;
+            background-color: rgba(255,255,255,0.0);
+            border-bottom:solid 2px white ;
+            font-size:large;
+            color:white;
+
+
+        }
+        .infield:hover
+        {
+            transition: 0.5s;
+            box-shadow: 0 0 5px white;
+	        padding: 5px;
+	        border: 1px solid white;
+        }
+        .infield:focus
+        {
+            transition: 0.5s;
+            box-shadow: 0 0 5px white;
+	        padding: 5px;
+	        border: 1px solid white;
+            background-color: rgba(255,255,255,0.4);
+            color:black;
+        }
+        .h_content{
+            align-content:center;
+            width:50%;
+            margin-left:25%;
+            margin-right:25%;
+        }
+        h_large{
+            width:300px;
+        }
     </style>
 
 </head>
 <body>
-    <form id="Log_in" runat="server">
-    <asp:Button ID="sign_up" class="button sign_up" runat="server" value="Sign Up" Text="Sign Up" />
-    <div class="main_div" align="center">
-        <h1 style="padding-bottom:5px;margin-bottom:0px;color:white; font-size:2.5em;">HeadCounts</h1>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="sign_in" class="button sign_up" runat="server" value="Sign in" Text="Sign In" />
+            <br />
+
+            <div class="main_div" align="center">
+            <h1 style="padding-bottom:5px;margin-bottom:0px;color:white; font-size:2.5em;">HeadCounts</h1>
         <h5 style="margin-top:0px;color:white;font-size:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered by MAFH</h5>
-        <h4 style="color:white;font-size:1.2em;">Welcome back, Please Log in to your Account....</h4>
-        
-            <div>
-                username:<asp:TextBox ID="UserName" runat="server"></asp:TextBox><br />
-                password:<asp:TextBox ID="password" runat="server"></asp:TextBox><br />
-                <asp:CheckBox ID="Remember" runat="server" /> Remember me &nbsp; &nbsp; &nbsp; &nbsp;
-                <a href="#">Forgot login details?</a><br />
-                <input id="Login" type="submit" class="button login btn_anim" value="LogIn" />
+        <h4 style="color:white;font-size:1.2em;">Don't like filling large forms? we also.... Just provide these Details, and we'll get you Going.</h4>
+
+                <div class="h_content">
+
+                   
+
+
+
+                </div>
+
+
+
 
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 </body>
 </html>
